@@ -1,0 +1,25 @@
+<!-- index.html-->
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Bienvenidos a Autos de lujo</h1>
+    <p>Estas en la página de inicio</p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 90%;" >
+                <img src="/static/img/1.png" class="card-img-top" style="height: 400px;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Descubre la emoción de conducir tu auto nuevo. En <b>AUTOS</b> ,te ofrecemos una experiencia de compra personalizada, con una amplia variedad de modelos y las mejores condiciones del mercado.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 90%;">
+                <img src="/static/img/2.png" class="card-img-top" style="height: 400px;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Con más de 50 años de experiencia, nuestro equipo de mecánicos altamente capacitados se dedica a brindar el mejor cuidado a tu vehículo. Utilizamos tecnología de punta y repuestos originales para garantizar un servicio de calidad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
