@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('static/assets/imgs/cyberpunk.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .formulario-login {
+            background-color: transparent !important; /* Asegurarse que el fondo sea transparente */
+            box-shadow: none; /* Eliminar sombra */
+            border: none; /* Eliminar borde */
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            background: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente negro para el contenedor */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        h1 {
+            color: #00d9ff; /* Neon Cyberpunk Azul */
+            text-align: center;
+            font-size: 3rem;
+            text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff, 0 0 30px #00d9ff;
+        }
+
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+            border: 1px solid #00d9ff;
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #00d9ff;
+            border-color: #00d9ff;
+        }
+
+        .btn-primary:hover {
+            background-color: #00a5cc;
+            border-color: #00a5cc;
+        }
+
+        .createUser {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        .createUser:hover {
+            color: #00a5cc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="formulario-login">
+        <h1 class="mb-5" id="title">Inicia sesión <hr> </h1>
+        <form action="{{ url_for('loginUser') }}" method="POST" autocomplete="off">
+            <div class="mb-6">
+                <label for="email" class="form-label text-light">Escribir tu Email</label>
+                <input type="email" name="email" id="email" class="form-control" required="true">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="form-label mt-4 text-light">Escribe tu Password</label>
+                <input type="password" name="password" class="form-control" required="true">
+            </div>
+
+            <div class="d-grid gap-2 mt-3 mb-3">
+                <button type="submit" class="btn btn-primary btn-send">Entrar Ahora!</button>
+            </div>
+
+            <div class="mb-12">
+                <span class="text-light">No tienes Cuenta?</span>
+                <a href="#" id="link_sign_up" class="createUser" style="color: #00d9ff; font-weight: bold; text-decoration: none;">Crear cuenta</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

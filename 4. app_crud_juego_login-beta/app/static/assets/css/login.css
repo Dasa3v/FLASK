@@ -1,0 +1,50 @@
+/* Estilo para el contenedor del formulario */
+.formulario-login {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con 60% de opacidad */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Sombra neón */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+}
+
+/* Para los campos de entrada */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente blanco */
+    border: 1px solid #00d9ff; /* Borde azul cibernético */
+    color: white; /* Texto blanco */
+}
+
+/* Estilo para los placeholders */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Color para los placeholders */
+}
+
+/* Efecto de foco en los campos de entrada */
+.form-control:focus {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo oscuro al hacer foco */
+    border: 1px solid #00a5cc;
+}
+
+/* Estilo del botón */
+.btn-primary {
+    background-color: #00d9ff;
+    border-color: #00d9ff;
+}
+
+.btn-primary:hover {
+    background-color: #00a5cc;
+    border-color: #00a5cc;
+}
+
+/* Estilo para el enlace de creación de cuenta */
+.createUser {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+.createUser:hover {
+    color: #00a5cc;
+}
